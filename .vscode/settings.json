@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.lineNumbers": "on"
+}

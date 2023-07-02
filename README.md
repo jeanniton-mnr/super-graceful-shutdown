@@ -47,9 +47,7 @@ echo "shutdown" | nc localhost 3000
 ````
 
 ## Notes
-Do not expose port `3000` to prevent outsider shutting down your application.
-At this link, DigitalOcean has an article on how to allow and block a port to outside network:
-https://www.digitalocean.com/community/tutorials/opening-a-port-on-linux
+Do not expose port 3000 to prevent outsiders from shutting down your application. You can [find](https://www.digitalocean.com/community/tutorials/opening-a-port-on-linux) an article on how to allow or block a port to the outside network in this link provided by DigitalOcean.
 
 ### Author
 [Monero Jeanniton](https://www.linkedin.com/in/monero-jeanniton-0431826a/)

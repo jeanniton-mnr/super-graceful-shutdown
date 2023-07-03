@@ -5,6 +5,8 @@
 
 The super-graceful-shutdown npm package provides a super graceful way to shutdown an Express server application.
 
+super-graceful-shutdown always make sure a response is sent to the client for any connections that were open before you send a super graceful "shutdown" message.
+
 When you send the default `shutdown` message on default port `3000` to your node the Express app, super-graceful-shutdown will gracefully wait for all requests to close, ensuring a response is sent to the client; block any new connections; shutdown the server; then terminate node process.
 
 
@@ -33,10 +35,10 @@ router.get('/api1', async function(req, res, next){
 
 const server = app.listen(port, () => console.log(`Example Express app listening on port ${port}!`) );
 
-// Before you initialize other routes, you need to initialize super-graceful-shutdown
+// ℹ️ Before you initialize other routes, you need to initialize super-graceful-shutdown
 new SGS(app, server);
 
-// Then, you can initialize other routes
+// 👨‍💻 Then, you can initialize other routes
 app.use('/', router);
 ```
 
@@ -48,6 +50,9 @@ echo "shutdown" | nc localhost 3000
 
 ## Notes
 Do not expose port 3000 to prevent outsiders from shutting down your application. You can [find](https://www.digitalocean.com/community/tutorials/opening-a-port-on-linux) an article on how to allow or block a port to the outside network in this link provided by DigitalOcean.
+
+## Reference:
+I have this npm [package boilerplate](https://github.com/ryansonshine/typescript-npm-package-template/tree/main) to create this package.
 
 ### Author
 [Monero Jeanniton](https://www.linkedin.com/in/monero-jeanniton-0431826a/)

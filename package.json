@@ -1,7 +1,7 @@
 {
-  "name": "typescript-npm-package-template",
+  "name": "super-graceful-shutdown",
   "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "description": "The super-graceful-shutdown npm package provides a super graceful way to shutdown an Express server application.",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
@@ -19,27 +19,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/jeanniton-mnr/super-graceful-shutdown.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Monero",
+    "email": "jeanniton.mnr@gmail.com",
+    "url": "https://github.com/jeanniton-mnr"
   },
   "engines": {
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
-    "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "super-graceful-shutdown",
+    "graceful",
+    "shutdown",
+    "node",
+    "express"
   ],
   "bugs": {
     "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"

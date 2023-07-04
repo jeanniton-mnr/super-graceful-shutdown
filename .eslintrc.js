@@ -5,15 +5,19 @@ module.exports = {
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
+        "ecmaVersion": "latest"
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:node/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:prettier/recommended',
-  ],
+  "env": {
+      "es6": true
+  },
+  // extends: [
+  //   'eslint:recommended',
+  //   'plugin:node/recommended',
+  //   'plugin:@typescript-eslint/eslint-recommended',
+  //   'plugin:@typescript-eslint/recommended',
+  //   'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  //   'plugin:prettier/recommended',
+  // ],
   rules: {
     'prettier/prettier': 'warn',
     'node/no-missing-import': 'off',

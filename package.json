@@ -1,5 +1,5 @@
 {
-  "name": "super-graceful-shutdown",
+  "name": "@super/graceful-shutdown",
   "version": "1.0.2",
   "description": "The super-graceful-shutdown npm package provides a super graceful way to shutdown an Express server application.",
   "main": "./lib/src/index.js",

@@ -38,6 +38,10 @@ const server = app.listen(port, () => console.log(`Example Express app listening
 // ℹ️ Before you initialize other routes, you need to initialize super-graceful-shutdown
 new SGS(app, server);
 
+// ℹ️ By default, super-graceful-shutdown will send the SIGTERM to the node process.
+// ℹ️ However, you can also manually exit the app once all active connections are closed.
+// ℹ️ new SGS(app, server, () => process.exit(0));
+
 // 👨‍💻 Then, you can initialize other routes
 app.use('/', router);
 ```
